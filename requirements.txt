@@ -1,0 +1,8 @@
+jsonpatch==1.2
+jsonpointer==1.9
+jsonschema==2.5.1
+requests
+python-telegram-bot==9.0.0
+flask
+
+

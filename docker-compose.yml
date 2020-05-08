@@ -1,0 +1,7 @@
+version: '3'
+services:
+  wb:
+    image: registry.arch:4567/s.komov/webhook-listner:latest
+    container_name: wb
+    ports:
+      - 5000:5000
