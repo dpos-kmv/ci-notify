@@ -5,6 +5,6 @@ jobs:
     steps:
       - checkout
       - run: |
-          docker build -t dpos-kmv/ci-notify:latest .
+          docker build -t rckkmv/ci-notify:latest .
           echo $DOCKERHUB_AUTH | docker login -u $DOCKER_USER --password-stdin
           docker push dpos-kmv/ci-notify:latest
