@@ -4,7 +4,6 @@ jobs:
     machine: true
     steps:
       - checkout
-      - run: |
-          docker build -t rckkmv/ci-notify:latest .
-          docker login -u $DOCKER_USER -p $DOCKERHUB_AUTH
-          docker push rckkmv/ci-notify:latest
+      - run: docker build -t rckkmv/ci-notify:latest .
+      - run: docker login -u rckkmv -p $DOCKERHUB_AUTH
+      - run: docker push rckkmv/ci-notify:latest
