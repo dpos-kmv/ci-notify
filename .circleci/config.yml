@@ -3,4 +3,4 @@ jobs:
   build:
     machine: true
     steps:
-      - run: docker build -t test .
+      - run: ls -la
